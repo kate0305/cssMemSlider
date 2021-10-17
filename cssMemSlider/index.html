@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cssMemSlider</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cssMemSlider</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <main>
+    <h1 class="title">CSS Slider</h1>
+    <div class="wrapper">
+      <div class="slider">
+        <input class="control" type="radio" name="control" id="slide1" checked>
+        <input class="control" type="radio" name="control" id="slide2">
+        <input class="control" type="radio" name="control" id="slide3">
+        <input class="control" type="radio" name="control" id="slide4">
+        <input class="control" type="radio" name="control" id="slide5">
+        <div class="slider-image">
+          <div class="images images1">
+            <img class="image image1" src="./assets/img/mem1.jpg" alt="mem">
+          </div>
+          <div class="images">
+            <img class="image image2" src="./assets/img/mem2.jpeg" alt="mem">
+          </div>
+          <div class="images">
+            <img class="image image3" src="./assets/img/mem3.jpeg" alt="mem">
+          </div>
+          <div class="images">
+            <img class="image image4" src="./assets/img/mem4.jpeg" alt="mem">
+          </div>
+          <div class="images">
+            <img class="image image5" src="./assets/img/ross-phoebe.gif" alt="mem">
+          </div>  
+        </div>
+        <div class="slider__text">
+          <p>RS School students awaiting CodeJam Task</p>
+          <p>When pushed the wrong commit</p>
+          <p>I am reading a new task</p>
+          <p>When you see the grade given by the student1</p>
+          <p>When my code works</p>
+        </div>
+        <div class="slider__caption">
+          <label class="caption" for="slide1"></label>
+          <label class="caption" for="slide2"></label>
+          <label class="caption" for="slide3"></label>
+          <label class="caption" for="slide4"></label>
+          <label class="caption" for="slide5"></label>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer__wrapper">
+    <div >
+      <ul class="footer-information">
+        <li>© 2021</li>
+        <li><a class="logo" href="https://rs.school/js/" target="_blank"></a></li>
+        <li><a class="git" href="http://github.com/kate0305" target="_blank">kate0305</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
