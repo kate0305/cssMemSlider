@@ -8,33 +8,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
+  <header>
     <h1 class="title">CSS Slider</h1>
+  </header>
+  <main>
     <div class="wrapper">
       <div class="slider">
-        <input class="control" type="radio" name="control" id="slide1" checked>
-        <input class="control" type="radio" name="control" id="slide2">
-        <input class="control" type="radio" name="control" id="slide3">
-        <input class="control" type="radio" name="control" id="slide4">
-        <input class="control" type="radio" name="control" id="slide5">
-        <div class="slider-image">
+        <input class="pseudo-control" type="radio" name="pseudo-control" id="slide1" checked>
+        <input class="pseudo-control" type="radio" name="pseudo-control" id="slide2">
+        <input class="pseudo-control" type="radio" name="pseudo-control" id="slide3">
+        <input class="pseudo-control" type="radio" name="pseudo-control" id="slide4">
+        <input class="pseudo-control" type="radio" name="pseudo-control" id="slide5">
+        <div class="slider__image">
           <div class="images images1">
-            <img class="image image1" src="./assets/img/mem1.jpg" alt="mem">
+            <img class="image" src="./assets/img/mem1.jpg" alt="mem">
           </div>
           <div class="images">
-            <img class="image image2" src="./assets/img/mem2.jpeg" alt="mem">
+            <img class="image" src="./assets/img/mem2.jpeg" alt="mem">
           </div>
           <div class="images">
-            <img class="image image3" src="./assets/img/mem3.jpeg" alt="mem">
+            <img class="image" src="./assets/img/mem3.jpeg" alt="mem">
           </div>
           <div class="images">
-            <img class="image image4" src="./assets/img/mem4.jpeg" alt="mem">
+            <img class="image" src="./assets/img/mem4.jpeg" alt="mem">
           </div>
           <div class="images">
-            <img class="image image5" src="./assets/img/mem5.gif" alt="mem">
+            <img class="image" src="./assets/img/mem5.gif" alt="mem">
           </div>  
         </div>
-        <div class="slider-footer">
+        <div class="slider-caption">
           <div class="slider__text">
             <p class="mem-text1">RS School students awaiting CodeJam Task</p>
             <p class="mem-text2">When pushed the wrong commit</p>
@@ -42,12 +44,12 @@
             <p class="mem-text4">When you see the grade given by the student1</p>
             <p class="mem-text5">When my code works</p>
           </div>
-          <div class="slider__caption">
-            <label class="caption" for="slide1"></label>
-            <label class="caption" for="slide2"></label>
-            <label class="caption" for="slide3"></label>
-            <label class="caption" for="slide4"></label>
-            <label class="caption" for="slide5"></label>
+          <div class="slider__control">
+            <label class="control" for="slide1"></label>
+            <label class="control" for="slide2"></label>
+            <label class="control" for="slide3"></label>
+            <label class="control" for="slide4"></label>
+            <label class="control" for="slide5"></label>
           </div>
         </div>
 
