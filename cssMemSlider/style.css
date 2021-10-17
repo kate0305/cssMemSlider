@@ -77,7 +77,6 @@ main {
 .slider__text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   height: 1.7rem;
   font-family: "Friends";
   font-size: 1rem;
@@ -86,7 +85,7 @@ main {
 
 .slider__text > p {
   opacity: 0;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 } 
 
 .pseudo-control {
@@ -98,7 +97,6 @@ main {
 	display: inline-block;
   width: 2rem;
   height: 2rem;
-  position: relative;
   background-color: #ffffff;
   border-radius: 50%;
   border: 0.5rem solid #1d1d1d;
@@ -119,6 +117,22 @@ main {
 #slide4:checked ~ .slider-caption .slider__control .control:nth-of-type(4),
 #slide5:checked ~ .slider-caption .slider__control .control:nth-of-type(5) {
   background-color: #c70d0d;
+}
+
+#slide1:checked ~ .slider-caption .slider__control .control:nth-of-type(1):hover,
+#slide2:checked ~ .slider-caption .slider__control .control:nth-of-type(2):hover,
+#slide3:checked ~ .slider-caption .slider__control .control:nth-of-type(3):hover,
+#slide4:checked ~ .slider-caption .slider__control .control:nth-of-type(4):hover,
+#slide5:checked ~ .slider-caption .slider__control .control:nth-of-type(5):hover {
+  background-color: #06b9f5;
+}
+
+#slide1:checked ~ .slider-caption .slider__control .control:nth-of-type(1):active,
+#slide2:checked ~ .slider-caption .slider__control .control:nth-of-type(2):active,
+#slide3:checked ~ .slider-caption .slider__control .control:nth-of-type(3):active,
+#slide4:checked ~ .slider-caption .slider__control .control:nth-of-type(4):active,
+#slide5:checked ~ .slider-caption .slider__control .control:nth-of-type(5):active {
+  background-color: #fafa50;
 }
 
 #slide1:checked ~ .slider-caption > .slider__text > .mem-text1 {
@@ -217,8 +231,9 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
     height: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     overflow: hidden;
   }
 
